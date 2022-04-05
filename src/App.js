@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+// import './App.css';
+import Accordion from "./Components/Accordion/Accordion";
 function App() {
+  const accordion_list = [
+    {
+      id: 1,
+      title: "1. Lorem ipsum dolor sit amet.",
+      description:
+        "1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, provident. Vero officiis tempore fugiat nostrum praesentium eaque, dignissimos quibusdam, placeat provident eligendi quaerat dolore consectetur!",
+    },
+    {
+      id: 2,
+      title: "2. Lorem ipsum dolor sit amet.",
+      description:
+        "2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, provident. Vero officiis tempore fugiat nostrum praesentium eaque, dignissimos quibusdam, placeat provident eligendi quaerat dolore consectetur!",
+    },
+    {
+      id: 3,
+      title: "3. Lorem ipsum dolor sit amet.",
+      description:
+        "3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, provident. Vero officiis tempore fugiat nostrum praesentium eaque, dignissimos quibusdam, placeat provident eligendi quaerat dolore consectetur!",
+    },
+    {
+      id: 4,
+      title: "4. Lorem ipsum dolor sit amet.",
+      description:
+        "4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, provident. Vero officiis tempore fugiat nostrum praesentium eaque, dignissimos quibusdam, placeat provident eligendi quaerat dolore consectetur!",
+    },
+    {
+      id: 5,
+      title: "5. Lorem ipsum dolor sit amet.",
+      description:
+        "5. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, provident. Vero officiis tempore fugiat nostrum praesentium eaque, dignissimos quibusdam, placeat provident eligendi quaerat dolore consectetur!",
+    },
+  ];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Accordion accordion_list={accordion_list}></Accordion>
     </div>
   );
 }
