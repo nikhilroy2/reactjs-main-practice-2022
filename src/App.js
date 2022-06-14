@@ -1,6 +1,9 @@
 import logo from "./logo.svg";
 // import './App.css';
 import Accordion from "./Components/Accordion/Accordion";
+
+import AntDesign from "./Components/AntDesign/AntDesign";
+import Todo from "./Components/Todo/Todo";
 function App() {
   const accordion_list = [
     {
@@ -36,7 +39,9 @@ function App() {
   ];
   return (
     <div className="App">
-      <Accordion accordion_list={accordion_list}></Accordion>
+      {/* <Accordion accordion_list={accordion_list}></Accordion>
+      <AntDesign></AntDesign> */}
+      <Todo></Todo>
     </div>
   );
 }
